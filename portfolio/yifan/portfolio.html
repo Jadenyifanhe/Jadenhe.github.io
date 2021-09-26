@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="INLS 573 Assignment 3">
+    <meta name="author" content="Yifan He">
+    <title>Yifan He</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Source+Sans+Pro:wght@400;700&family=Roboto&family=Oswald:wght@600&display=swap" rel="stylesheet">
+    <link href="css/creative.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="wrapper-3">
+<!-- Header SECTION: ************************************************************************************************  -->
+    <header>
+       <a id="logo" href="http://sils.unc.edu/"><div>
+          <picture>
+            <source 
+              media="(min-width: 40em)" srcset="img/SILS_logo-320w.png">   
+            <img src="img/SILS_logo-160w.png" class=banner alt="UNC SILS logo">
+          </picture></div></a>
+       <h1><strong>Jaden Yifan He</strong></h1>
+<!-- Encrypted Email -->
+        <div>
+            <p><a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#121;&#105;&#102;&#97;&#110;&#104;&#121;&#102;&#64;&#97;&#100;&#46;&#117;&#110;&#99;&#46;&#101;&#100;&#117;">&#121;&#105;&#102;&#97;&#110;&#104;&#121;&#102;&#64;&#97;&#100;&#46;&#117;&#110;&#99;&#46;&#101;&#100;&#117;</a></p>
+        </div>   
+    </header>
+<!-- Navigation SECTION: **********************************************************************************************  -->     
+        <nav class="nav-flex-container">
+            <a href="index.html">About Me</a>
+            <a href="experience.html">Experience</a>
+            <a href="portfolio.html" class=text-teal>Portfolio</a>
+        </nav>
+<!-- Sidebar SECTION:  ************************************************************************************************  -->   
+      <aside-1>
+        <h2>Contact</h2>
+        <div>
+         <picture>
+            <source 
+              media="(min-width: 40em)" srcset="img/Avatar-600w.jpg">   
+            <img src="img/Avatar-300w.jpg" class=avatar alt="My Avatar">
+          </picture> 
+        </div><br>
+        <!-- Resume -->
+        <p>This is my <a class="resume" href="files/Jaden_He_resume.pdf"><img src="img/pdf.gif" class=pdf-logo alt="pdf logo">Resume</a></p>
+        <!-- linkedin -->
+        <p>This is my <a href="https://www.linkedin.com/in/jaden-yifan-he-a2921a162/"><img src="img/Linkedin_logo.gif" class=linkedin-logo alt="Linkedin logo">Linkedin</a></p>
+        <p>Personal Email: iyifan.he@gmail.com</p>      
+        <p>Phone Number: 814-880-8736</p>
+        <div id="mapid"></div><br>
+        <p>Address: 201 South Elliott Road, Chapel Hill, NC, 27514</p>
+      </aside-1>
+<!-- Logic Pro Compositions SECTION:  ***************************************************************************************************  -->
+<!-- MIDI Composition SECTION:  *****************************************  -->
+   <article> 
+    <section id="logic">
+      <h2>Logic Pro Compositions</h2>
+        <h3>MIDI Composition</h3>
+        <div id="video-container-1">
+           <video id="video1" controls>
+             <source src="video/Project_2.mov" type="video/mp4">
+             Your browser does not support HTML5 video.
+         </video>   
+        </div>
+         <div id="notes"><b>Info! (Please pay attention to turn down the volume)</b></div>
+         <div id="audio-container-1">
+           <div><b>Mp3 Version:</b></div>
+           <div><audio id="audio1" controls>
+             <source src="audio/MIDI_Composition.mp3" type="audio/mpeg">
+             Your browser does not support the audio element.
+           </audio></div>
+         </div>
+             <p>The piece was written two years ago when my first band in college disbanded. Two of our team members graduated and might not be able to by our side. The emotion expressed here is the strong power of friendship. Even if we face difficulties in our lives, as long as we have friends by our sides, we will be able to overcome the hardships.</p>
+             <p>An interesting part about this MIDI arrangement is that I vastly used the humanize function to make the original machine-like neat into slightly irregular so that it has kind of feeling like played by real humans.</p>
+    </section>
+<!-- Musique Concrète Project SECTION:  *****************************************  --> 
+    <section id="musique">
+        <h3>Musique Concrète Project</h3>
+        <div id="video-container-2">
+           <video id="video2" controls>
+             <source src="video/Project_1.mov" type="video/mp4">
+             Your browser does not support HTML5 video.
+           </video>   
+        </div>
+           <div id="audio-container-2">
+             <div><b>Mp3 Version:</b></div>
+             <div><audio id="audio2" controls>
+             <source src="audio/Musique_Concr%C3%A8te_Project.mp3" type="audio/mpeg">
+             Your browser does not support the audio element.
+             </audio></div>
+           </div>
+             <p>This is an audio collage project focused on creative listening, consisting of a variety of sound clips. Those clips intentionally to be quite short - all of them are less than two seconds. Many interesting things can happen in two seconds, and it's even more interesting to put clips of sounds within two seconds together in such a way that their sum creates something entirely new.</p>
+             <p>I collected sounds from animals, martial art movies, and video games, and trying to depict a story of a fight between two Ninjas. The scene happened at midnight in the wild, surrounded by insects and wolves. In the first round, one Ninja is chasing another, and the chaser continues to shoot the escaper with darts. Then the escaper was hit by a dart and get injured, fell to the ground. The chaser was quite complacent. In the second round, the escaper had to fight with the chaser. After two battles, one person was eventually killed and the other won. (Who wins and who loses is depends on your guess.)</p>
+    </section>
+<!-- Honor Thesis SECTION:  ***********************************************************************************************************************  --> 
+    <section id="thesis">
+        <h2>Senior Honor Thesis </h2>
+        <iframe src="files/Yifan_thesis.pdf" id="paper" width=100% height="1000px">
+        </iframe>
+    </section>
+   </article>
+ <!-- Drum Solo SECTION:  *********************************************************************************************************************  -->   
+   <aside-2>
+       <h2>Drum Performance</h2>
+       <h3>Funk Drum Set Solo</h3>
+       <div class="yt-wrapper-1">
+       <iframe id="ytplayer-1" src="https://youtu.be/embed/Er9yqfd3Vio" allowfullscreen></iframe></div>
+       <img src="img/funk_solo.png" class=funk alt="Funk Solo">
+       <p>Advanced Funk Studies by Rick Latham</p>
+       <h3>Snare Drum Solo</h3>
+       <div class="yt-wrapper-2">
+       <iframe id="ytplayer-2" src="https://youtu.be/embed/N_tJFP28T1k" allowfullscreen></iframe></div>
+       <img src="img/snare_solo.jpg" class=snare alt="Snare Solo">
+   </aside-2>
+<!-- footer -->
+  <footer>
+<!-- Flex in footer: *************************************************************************************************************************  -->
+    <div class=wrapper-footer>
+    <p>Copyright &copy; Yifan He 2020 | Last Updated on 9 Dec 2020</p>
+    </div>
+  </footer>
+  </div>
+<!-- JavaScripts: *************************************************************************************************************************  -->
+    <script>
+	var mymap = L.map('mapid').setView([35.93333, -79.0276], 9);
+	L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+		maxZoom: 18,
+		id: 'mapbox/streets-v11',
+		tileSize: 512,
+		zoomOffset: -1,
+		accessToken: 'your.mapbox.access.token'
+        }).addTo(mymap);
+	L.marker([35.93333, -79.0276]).addTo(mymap)
+		.bindPopup("<b>Chapel Hill, NC</b><br><p>201 South Elliott Road, 27514</p>").openPopup();
+		var popup = L.popup();    
+    </script>  
+  </body>
+</html>

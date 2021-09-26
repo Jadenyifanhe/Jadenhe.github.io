@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="INLS 573 Assignment 3">
+    <meta name="author" content="Yifan He">
+    <title>Yifan He</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>  
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Source+Sans+Pro:wght@400;700&family=Roboto&family=Oswald:wght@600&display=swap" rel="stylesheet">
+    <link href="css/creative.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="wrapper">
+<!-- Header SECTION: ************************************************************************************************  -->
+    <header>
+       <a id="logo" href="http://sils.unc.edu/"><div>
+          <picture>
+            <source 
+              media="(min-width: 40em)" srcset="img/SILS_logo-320w.png">   
+            <img src="img/SILS_logo-160w.png" class=banner alt="UNC SILS logo">
+          </picture></div></a>
+       <h1><strong>Jaden Yifan He</strong></h1>
+<!-- Encrypted Email -->
+        <div>
+            <p><a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#121;&#105;&#102;&#97;&#110;&#104;&#121;&#102;&#64;&#97;&#100;&#46;&#117;&#110;&#99;&#46;&#101;&#100;&#117;">&#121;&#105;&#102;&#97;&#110;&#104;&#121;&#102;&#64;&#97;&#100;&#46;&#117;&#110;&#99;&#46;&#101;&#100;&#117;</a></p>
+        </div>   
+    </header>
+<!-- Navigation SECTION: **********************************************************************************************  -->     
+        <nav class="nav-flex-container">
+            <a href="index.html" class=text-teal>About Me</a>
+            <a href="experience.html">Experience</a>
+            <a href="portfolio.html">Portfolio</a>
+        </nav>
+<!-- Sidebar SECTION:  ************************************************************************************************  -->   
+      <aside-1>
+        <h2>Contact</h2>
+        <div>
+          <picture>
+            <source 
+              media="(min-width: 40em)" srcset="img/Avatar-600w.jpg">   
+            <img src="img/Avatar-300w.jpg" class=avatar alt="My Avatar">
+          </picture>
+        </div><br>
+        <!-- Resume -->
+        <p>This is my <a class="resume" href="files/Jaden_He_resume.pdf"><img src="img/pdf.gif" class=pdf-logo alt="pdf logo">Resume</a></p>
+        <!-- linkedin -->
+        <p>This is my <a href="https://www.linkedin.com/in/jaden-yifan-he-a2921a162/"><img src="img/Linkedin_logo.gif" class=linkedin-logo alt="Linkedin logo">Linkedin</a></p>
+        <p>Personal Email: iyifan.he@gmail.com</p>
+        <p>Phone Number: 814-880-8736</p>
+        <div id="mapid"></div><br> 
+        <p>Address: 201 South Elliott Road, Chapel Hill, NC, 27514</p>
+      </aside-1>
+<!-- About SECTION:  ***************************************************************************************************  -->
+   <article> 
+    <section id="about">
+      <h2 class="section-heading">About Me</h2>
+        <p>My name is Yifan He, go by Jaden. I am a senior undergraduate student at University of North Carolina at Chapel Hill, major in Information Science and minor in Music.</p>
+    </section>
+<!-- Education SECTION: *************************************************************************************************************************  -->
+    <section id="Education">
+      <h2 class="section-heading">Education</h2>
+        <div class=school-1><span class="bold">University of North Carolina at Chapel Hill</span></div>
+        <div class=info-1>
+           <ul>
+             <li><span class="bold">Bachelor of Science</span> in Information Science; <span class="bold">Minor</span> in Music; <span class="bold">GPA: </span>3.88/4.0</li>
+             <li><span class="bold">Major GPA:</span> 3.967; <span class="bold">Dean’s List</span> for 3 semesters in the <span class="bold">Undergraduate Honor Program</span></li>
+             <li><span class="bold">Relevant Coursework:</span> Information Retrieval, Object-Oriented Programming, Web and Mobile Web Development, Organization of Information, Information Systems Analysis and Design, Percussion Training (Directed by Dr. Juan Álamo)</li>
+           </ul>
+        </div>
+        <div class=school-2><span class="bold">Stanford University</span></div>
+        <div class=info-2>
+           <ul> 
+             <li><span class="bold">Summer Program</span> at Center for Computer Research in Music and Acoustics</li>
+             <li><span class="bold">Relevant Coursework:</span> Neural Nets for Music, Computer-Assisted Composition with Python, Algorithmic Composition in Max/MSP and Open Music</li>
+           </ul>    
+        </div>   
+        <div class=school-3><span class="bold">Pennsylvania State University at University Park</span></div>
+        <div class=info-3>
+           <ul>
+             <li><span class="bold">Bachelor of Science</span> in Information Science and Technology; <span class="bold">Minor</span> in Music Technology;<span class="bold"> GPA:</span> 3.67/4.0; <span class="bold">Dean’s List</span> for 4 semesters</li>
+             <li><span class="bold">Scholarship:</span> Rosemarie C. and Howard R. Peiffer Scholarship(2018-2019); John and Elizabeth Holmes Teas Scholarship(2017-2018)</li>
+             <li><span class="bold">Relevant Coursework:</span> Programming and Computation, Databases Management, Science of Music, Fundamentals of Digital Audio</li>
+           </ul>  
+        </div>
+    </section>
+   </article>
+<!-- Technical Skills:  *********************************************************************************************************  -->
+   <aside-2>
+    <section id="skills">
+      <h2 class="section-heading">Technical Skills</h2>
+           <ul>
+             <li><span class="bold">Programming Languages:</span> Python (Scikit-Learn, TensorFlow, Whoosh, Librosa), Java, MATLAB, SQL, HTML5, CSS, JavaScript, Max/MSP, Open Music, ChucK</li>
+             <li><span class="bold">Data Analysis:</span> SQL Server, Tableau, Microsoft Skills, Google Analytics</li>
+             <li><span class="bold">Audio Processing:</span> Logic Pro X, Adobe Audition, Pro Tools, Sonic Visualiser, Audacity, MuseScore</li>
+             <li><span class="bold">Computer-Aided Design:</span> SolidWorks, Blender, Autodesk 3ds Max</li>
+           </ul>  
+    </section>  
+    <!-- Research Interests:  *********************************************************************************************************  -->
+    <section id="interests">
+      <h2 class="section-heading">Research Interests</h2>
+           <ul>
+             <li>Muisc Information Retrieval</li>
+             <li>Digital Signal Processing</li>
+             <li>Natural Language Processing</li>
+             <li>Instrumental Acoustics</li>
+             <li>Optical Music Recognition</li>
+           </ul>  
+    </section>
+   </aside-2>
+<!-- footer -->
+  <footer>
+<!-- Flex in footer: *************************************************************************************************************************  -->
+    <div class=wrapper-footer>
+    <p>Copyright &copy; Yifan He 2020 | Last Updated on 9 Dec 2020</p>
+    </div>
+  </footer>
+  </div>  
+<!-- JavaScripts: *************************************************************************************************************************  -->
+    <script>
+	var mymap = L.map('mapid').setView([35.93333, -79.0276], 9);
+	L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+		maxZoom: 18,
+		id: 'mapbox/streets-v11',
+		tileSize: 512,
+		zoomOffset: -1,
+		accessToken: 'your.mapbox.access.token'
+        }).addTo(mymap);
+	L.marker([35.93333, -79.0276]).addTo(mymap)
+		.bindPopup("<b>Chapel Hill, NC</b><br><p>201 South Elliott Road, 27514</p>").openPopup();
+		var popup = L.popup();
+    </script>   
+  </body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="INLS 573 Assignment 3">
+    <meta name="author" content="Yifan He">
+    <title>Yifan He</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Source+Sans+Pro:wght@400;700&family=Roboto&family=Oswald:wght@600&display=swap" rel="stylesheet">
+    <link href="css/creative.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="wrapper-2">
+<!-- Header SECTION: ************************************************************************************************  -->
+    <header>
+       <a id="logo" href="http://sils.unc.edu/"><div>
+          <picture>
+            <source 
+              media="(min-width: 40em)" srcset="img/SILS_logo-320w.png">   
+            <img src="img/SILS_logo-160w.png" class=banner alt="UNC SILS logo">
+          </picture></div></a>
+       <h1><strong>Jaden Yifan He</strong></h1>
+<!-- Encrypted Email -->
+        <div>
+            <p><a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#121;&#105;&#102;&#97;&#110;&#104;&#121;&#102;&#64;&#97;&#100;&#46;&#117;&#110;&#99;&#46;&#101;&#100;&#117;">&#121;&#105;&#102;&#97;&#110;&#104;&#121;&#102;&#64;&#97;&#100;&#46;&#117;&#110;&#99;&#46;&#101;&#100;&#117;</a></p>
+        </div>   
+    </header>
+<!-- Navigation SECTION: **********************************************************************************************  -->     
+        <nav class="nav-flex-container">
+            <a href="index.html">About Me</a>
+            <a href="experience.html" class=text-teal>Experience</a>
+            <a href="portfolio.html">Portfolio</a>
+        </nav>
+<!-- Sidebar SECTION:  ************************************************************************************************  -->   
+      <aside-1>
+        <h2>Contact</h2>
+        <div>
+          <picture>
+            <source 
+              media="(min-width: 40em)" srcset="img/Avatar-600w.jpg">   
+            <img src="img/Avatar-300w.jpg" class=avatar alt="My Avatar">
+          </picture>
+        </div><br>
+        <!-- Resume -->
+        <p>This is my <a class="resume" href="files/Jaden_He_resume.pdf"><img src="img/pdf.gif" class=pdf-logo alt="pdf logo">Resume</a></p>
+        <!-- linkedin -->
+        <p>This is my <a href="https://www.linkedin.com/in/jaden-yifan-he-a2921a162/"><img src="img/Linkedin_logo.gif" class=linkedin-logo alt="Linkedin logo">Linkedin</a></p>
+        <p>Personal Email: iyifan.he@gmail.com</p>
+        <p>Phone Number: 814-880-8736</p>
+        <div id="mapid"></div><br>
+        <p>Address: 201 South Elliott Road, Chapel Hill, NC, 27514</p>
+      </aside-1>
+<!-- Professional Experience SECTION:  ***************************************************************************************************  -->
+   <article> 
+    <section id="prof-exp">
+      <h2 class="section-heading">Professional Experience</h2>
+        <div class=wrapper-exp>
+        <div class=title-1><span class="bold">Tencent Music Entertainment</span></div>
+        <div class=title-2><span class="bold">Universal Music Group</span></div>
+        <div class=title-3><span class="bold">Raccoon Records</span></div>
+        <div class=title-4><span class="bold">Zhang Ding Studio</span></div>
+        <div class=title-5><span class="bold">Farsoon Technologies</span></div>
+        <div class=exp-1><i><span class="bold">Research Assistant at Multimedia Lab</span></i>
+           <ul>
+             <li>Labeled music metadata, improving the QQ Music audio fingerprint algorithm by 7%, and tested algorithm results.</li>
+             <li>Managed QQ music database, labeled and proofread music files, and published over 3000 files online.</li>
+             <li>Designed and built the team website, for convenient data storage and extraction, also for display research results.</li>
+             <li>Collected and evaluated reviews of functions of QQ music on social media and reported weekly to the team leader.</li>
+           </ul></div>
+        <div class=exp-2><i><span class="bold">Data Analyst Intern</span></i>
+           <ul>
+             <li>Compiled pivot and Tableau tables on sales records in eCommerce stores, and report weekly to the team manager.</li>
+             <li>Organized and provided product information to the relevant teams for product setup.</li>
+             <li>Monitored inventory levels for stores and requested replenish stock as necessary.</li>
+           </ul></div>
+        <div class=exp-3><i><span class="bold">Web Operation Intern</span></i>
+           <ul>
+             <li>Maintained the online sales platform, handling users' purchase and return requests, made daily sales over 15 times.</li>
+             <li>Published over 20 Tweets weekly of the company and vinyl culture on social media to attract potential customers.</li>
+             <li>Managed the warehouse database via SQL, labeling the ID and genre over 600 vinyl records.</li>
+           </ul></div>
+        <div class=exp-4><i><span class="bold">Technical Assistant Intern</span></i>
+           <ul>
+             <li>Analyzed and Built over 10 3D models of Zhang Ding’s manuscript with SolidWorks.</li>
+             <li>Researched and Contacted manufacturing plants to produce handcraft components, and examined whether they meet the process standards required by Zhang Ding.</li>
+             <li>Assembled 3 Zhang Ding’s art works for his personal exhibition.</li>
+           </ul></div>
+        <div class=exp-5><i><span class="bold">Research and Development Department Intern</span></i>
+           <ul>
+             <li>Contributed to assembling the company's self-developed ceramic 3D printer from parts, which only cost one-third of a similar machine.</li>
+             <li>Built 2 3D models with SolidWorks weekly, ready to produce on 3D printers.</li>
+             <li>Helped to the operation the SLM 3D printer machine after two weeks of learning.</li>
+           </ul></div>
+        </div>
+    </section>
+   </article>
+<!-- Research and Community Involvement SECTION:  *****************************************************************************************************  -->
+   <aside-2>
+    <section id="involvement">
+      <h2 class="section-heading">Research and Community Involvement</h2>
+        <div class=wrapper-invol>
+        <div class=event-1><span class="bold">Honor Thesis</span></div>
+        <div class=event-2><span class="bold">Campus Music Club</span></div>
+        <div class=event-3><span class="bold">Penn State 3D Printing Club</span></div>
+        <div class=event-4><span class="bold">Kadenze Music Information Retrieval Program</span></div>
+        <div class=event-5><span class="bold">Audio Engineering Society</span></div>
+        <div class=event-6><span class="bold">International Society for Music Information Retrieval</span></div>
+        <div class=act-1><i><span class="bold">School of Information and Library Science, UNC-Chapel Hill</span></i>
+           <ul>
+             <li>Conducted a research study under the supervision of Professor Jaime Arguello and Professor Mohammad Hossein Jarrahi, composing the thesis on the topic of Music Information Retrieval, analyzing how using editorial metadata could improve music recommendation systems.</li>
+           </ul></div>
+        <div class=act-2><i><span class="bold">Head of Instrument Department</span></i>  
+           <ul>
+             <li>Directed music symposiums every week with over 80 members, and supervised the recruitment audition.</li>
+             <li>Held over 10 concerts annually around campus, performed as a percussionist and singer, and examined the audio setting in each concert.</li>
+           </ul></div>
+        <div class=act-3><i><span class="bold">Head of CAD department</span></i>
+           <ul>
+             <li>Hold weekly meetings to promote 3D modeling design and 3D modeling competition within the club</li>
+             <li>Designed and arranged club CAD lessons and assisting club members with their CAD designs.</li>
+           </ul></div>
+        <div class=act-4><i><span class="bold">Member</span></i>  
+           <ul>
+             <li>Finished the program directed by Dr. George Tzanetakis.</li>
+             <li>Relevant Coursework: Digital Signal Processing, Audio Feature Extraction, Naive Bayes Classification.</li>
+           </ul></div>
+        <div class=act-5><i><span class="bold">Member</span></i>  
+           <ul>
+             <li>Attended conferences, read journal papers to learn more about Audio Engineering field.</li>
+           </ul></div>
+        <div class=act-6><i><span class="bold">Member</span></i>  
+           <ul>
+             <li>Attended local meetings, read journal papers to learn more about MIR field.</li>
+           </ul></div>
+        </div>
+    </section> 
+   </aside-2>
+<!-- footer -->
+  <footer>
+<!-- Flex in footer: *************************************************************************************************************************  -->
+    <div class=wrapper-footer>
+    <p>Copyright &copy; Yifan He 2020 | Last Updated on 9 Dec 2020</p>
+    </div>
+  </footer>
+  </div>
+<!-- JavaScripts: *************************************************************************************************************************  -->
+    <script>
+	var mymap = L.map('mapid').setView([35.93333, -79.0276], 9);
+	L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+		maxZoom: 18,
+		id: 'mapbox/streets-v11',
+		tileSize: 512,
+		zoomOffset: -1,
+		accessToken: 'your.mapbox.access.token'
+        }).addTo(mymap);
+	L.marker([35.93333, -79.0276]).addTo(mymap)
+		.bindPopup("<b>Chapel Hill, NC</b><br><p>201 South Elliott Road, 27514</p>").openPopup();
+		var popup = L.popup();
+    </script>  
+  </body>
+</html>
