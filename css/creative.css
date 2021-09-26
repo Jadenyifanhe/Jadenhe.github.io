@@ -115,7 +115,7 @@ nav a {
 i {
   font-size: 1em;   
 }
-.school-1, .school-2, .school-3{
+.school{
   font-size: 1.0em;
   margin-bottom: 0.05em;
 }
@@ -439,7 +439,7 @@ aside-2   { grid-area: side-2; }
   width: 22%;
   font-size: 0.9em;
  }
-  .school-1, .school-2, .school-3{
+  .school{
   font-size: 1.3em;
  }
 }   
@@ -477,7 +477,7 @@ aside-2   { grid-area: side-2; }
   width: 24%;
   font-size: 1.3em;
  }
-  .school-1, .school-2, .school-3{
+  .school{
   font-size: 1.4em;
  }
 }
